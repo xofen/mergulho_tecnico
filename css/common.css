@@ -1,0 +1,21 @@
+/* ___ ROOT n CLASSES ___ */
+
+/* ___ HTML n BODY ___ */
+
+/* ___ HEADER ___ */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 2rem 0;
+}
+
+#logo-header {
+  width: 60%;
+  border-radius: 50%;
+}
+
+/* ___ COMMON ___ */
+
+/* ___ FOOTER ___ */
