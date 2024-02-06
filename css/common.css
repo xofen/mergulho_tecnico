@@ -3,17 +3,49 @@
 /* ___ HTML n BODY ___ */
 
 /* ___ HEADER ___ */
-header {
+/* header {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
   padding: 2rem 0;
-}
+} */
 
 #logo-header {
   width: 60%;
   border-radius: 50%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.topnav #menu {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  padding: 1rem;
 }
 
 /* ___ COMMON ___ */
