@@ -30,7 +30,13 @@
   padding: 2rem 0;
 }
 
+@keyframes slideaway {
+  from { display: none; opacity: 0; }
+  to { opacity: 1; }
+}
+
 .topnav #menu {
+  animation: slideaway 1.3s;
   display: none;
 }
 
