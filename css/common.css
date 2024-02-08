@@ -41,7 +41,6 @@ html {
 }
 
 #menu ul li {
-  /* border-bottom: 1px solid gray; */
   border-top: 1px solid gray;
   width: 100%;
 }
@@ -54,13 +53,15 @@ html {
   display: block;
 }
 
-.topnav a:hover {
+.topnav .menu-item:hover {
   background-color: #ddd;
   color: black;
 }
 
-#burger:hover {
-  color: red;
+@media (hover: hover) {
+  #burger:hover {
+    color: red;
+  }
 }
 
 .topnav a.icon {
@@ -76,30 +77,57 @@ section {
   padding: 2rem;
 }
 
+section > * {
+  margin-bottom: 2rem;
+}
+
 section h2 {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  font-variant-caps: all-petite-caps;
   text-align: center;
   line-height: 2.5rem;
+  border-bottom: 2px solid black;
+  padding-bottom: .5rem;
 }
 
 section p {
   font-size: 1rem;
-  line-height: 1.3rem;
-  margin-bottom: 1rem;
+  line-height: 1.5rem;
 }
 
 section span {
   font-weight: 600;
 }
 
+section details {
+  background: rgb(0,0,0);
+  background: linear-gradient(135deg, rgba(0,0,0,1) 96%, rgba(255,255,255,1) 96%);
+  color: white;
+  cursor: pointer;
+}
+
+section summary {
+  padding: 1rem;
+}
+
+@media (hover: hover) {
+  section details summary:hover {
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(255,0,0,1) 96%, rgba(255,255,255,1) 96%);
+  }
+}
+
+section details[open] ul {
+  border-top: 1px solid white;
+}
+
 section ul {
   font-size: 1.2rem;
   font-style: italic;
   line-height: 1.6rem;
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
+  padding: 1rem 0 1.5rem 0;
+  padding-left: 3rem;
   list-style: square;
 }
 
@@ -109,21 +137,35 @@ section li::marker {
 
 section button {
   font-size: 1.2rem;
+  text-transform: uppercase;
   width: 40%;
-  align-self: center;
+  align-self: end;
+  margin-right: 2rem;
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
   background-color: red;
   color: white;
-  border: 2px solid black;
-  border-radius: 100px;
+  border: 1px solid black;
   cursor: pointer;
 }
 
 section button:hover {
   background-color: white;
   color: red;
-  border: 2px solid red;
+  border: 1px solid red;
+}
+
+section img {
+  padding: .7rem;
+  margin-top: 1.6rem;
+}
+
+.invert {
+  background-color: black;
+  color: white;
+}
+
+.invert h2 {
+  border-bottom: 2px solid white;
 }
 
 /* ___ FOOTER ___ */
