@@ -7,7 +7,6 @@ function myFunction() {
   } else {
     x.style.display = "block";
     x.style.animation = "droplow 1.3s";
-    x.style.borderBottom = "4px solid gray";
     y.innerHTML = '<i class="fa-solid fa-xmark"></i>';
   }
 }

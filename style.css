@@ -1,3 +1,4 @@
+/* ___ VIAGENS ___ */
 #trips {
     display: flex;
     flex-direction: column;
@@ -23,8 +24,18 @@
 }
 
 .trip-card img {
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: .4rem;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.128);
     width: 200px;
     height: 200px;
+}
+
+/* ___ CONHECA ___ */
+#conheca img {
+    border-radius: 100%;
+    border: 5px solid var(--vermelho-principal);
+    background-color: black;
+    width: 240px;
+    align-self: center;
 }
