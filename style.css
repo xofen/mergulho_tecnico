@@ -1,3 +1,29 @@
+/* ___ CURSOS ___ */
+@media screen and (min-width: 768px) {
+    /* DESKTOP */
+    #cursos {
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+        gap: 10%;
+        justify-content: center;
+    }
+
+    #cursos .section-box {
+        width: 400px;
+    }
+
+    #cursos h2 {
+        text-align: left;
+    }
+
+    #cursos img {
+        width: 400px;
+        height: 400px;
+        margin-top: 4rem;
+    }
+}
+
+
 /* ___ VIAGENS ___ */
 #trips {
     display: flex;
