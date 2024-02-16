@@ -1,62 +1,108 @@
 /* ___ CURSOS ___ */
 @media screen and (min-width: 768px) {
-    /* DESKTOP */
-    #cursos {
-        flex-direction: row;
-        /* justify-content: space-evenly; */
-        gap: 10%;
-        justify-content: center;
-    }
+  /* DESKTOP */
+  #cursos {
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+  }
 
-    #cursos .section-box {
-        width: 400px;
-    }
+  #cursos .section-box {
+    width: 400px;
+  }
 
-    #cursos h2 {
-        text-align: left;
-    }
+  #cursos h2 {
+    text-align: left;
+  }
 
-    #cursos img {
-        width: 400px;
-        height: 400px;
-        margin-top: 4rem;
-    }
+  #cursos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 4rem;
+  }
 }
-
 
 /* ___ VIAGENS ___ */
 @media screen and (min-width: 768px) {
-    /* DESKTOP */
-    #viagens {
-        flex-direction: row-reverse;
-        gap: 5%;
-        justify-content: center;
-    }
+  /* DESKTOP */
+  #viagens {
+    flex-direction: row-reverse;
+    gap: 5%;
+    justify-content: center;
+  }
 
-    #viagens .section-box {
-        width: 400px;
-    }
+  #viagens .section-box {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    /* MOBILE */
-    
+  /* MOBILE */
 }
 
 #trips {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+#trips span {
+  font-size: 1rem;
+  font-weight: 500;
+}
 
+#trips .text {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+}
 
 /* ___ CONHECA ___ */
+@media screen and (min-width: 768px) {
+  /* DESKTOP */
+  #conheca {
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+  }
+
+  #conheca .section-box {
+    width: 400px;
+  }
+
+  #conheca h2 {
+    text-align: left;
+  }
+
+  .logo-box {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #conheca img {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* MOBILE */
+  .logo-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 #conheca img {
-    border-radius: 100%;
-    border: 5px solid var(--vermelho-principal);
-    background-color: black;
-    width: 240px;
-    align-self: center;
+  border-radius: 100%;
+  border: 5px solid var(--vermelho-principal);
+  background-color: black;
+  width: 240px;
+  height: 240px;
 }

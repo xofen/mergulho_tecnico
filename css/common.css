@@ -1,19 +1,19 @@
 /* ___ ROOT n CLASSES ___ */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --vermelho-principal: #f21822;
 }
 
-
+.select {
+  color: gray;
+}
 
 /* ___ HTML n BODY ___ */
 html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 1.1rem;
 }
-
-
 
 /* ___ HEADER ___ */
 @media screen and (min-width: 768px) {
@@ -73,7 +73,7 @@ html {
   .topnav {
     flex-direction: column;
     justify-content: center;
-    padding: 3rem 0 .5rem 0;
+    padding: 3rem 0 0.5rem 0;
   }
 
   #logo-header {
@@ -86,42 +86,49 @@ html {
   }
 
   @keyframes droplow {
-    from { display: none; opacity: 0; max-height: 0px; }
-    to { opacity: 1; max-height: 500px; }
+    from {
+      display: none;
+      opacity: 0;
+      max-height: 0px;
+    }
+    to {
+      opacity: 1;
+      max-height: 500px;
+    }
   }
-  
+
   .topnav #menu {
     display: none;
     width: 100%;
   }
-  
+
   #menu ul {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  
+
   #menu ul li {
     border-top: 1px solid gray;
     width: 100%;
   }
-  
+
   .topnav a {
     padding: 14px 16px;
     display: block;
   }
-  
+
   .topnav .menu-item:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   @media (hover: hover) {
     #burger:hover {
       color: var(--vermelho-principal);
     }
   }
-  
+
   .topnav a.icon {
     background: black;
     display: block;
@@ -146,8 +153,6 @@ html {
   text-decoration: none;
   font-size: 1.5rem;
 }
-
-
 
 /* ___ COMMON ___ */
 section {
@@ -176,7 +181,7 @@ section h2 {
   text-align: center;
   line-height: 2.5rem;
   border-bottom: 2px solid black;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 section p {
@@ -189,8 +194,12 @@ section span {
 }
 
 section details {
-  background: rgb(0,0,0);
-  background: linear-gradient(135deg, rgba(0,0,0,1) 96%, rgba(255,255,255,1) 96%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 96%,
+    rgba(255, 255, 255, 1) 96%
+  );
   color: white;
   cursor: pointer;
 }
@@ -205,12 +214,17 @@ section summary {
 
 @media (hover: hover) {
   section details summary:hover {
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(255,0,0,1) 96%, rgba(255,255,255,1) 96%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 1) 96%,
+      rgba(255, 255, 255, 1) 96%
+    );
   }
 }
 
-section details[open] ul, details p {
+section details[open] ul,
+details p {
   border-top: 1px solid white;
 }
 
@@ -247,7 +261,7 @@ section button:hover {
 }
 
 section img {
-  padding: .7rem;
+  padding: 0.7rem;
   margin-top: 1.6rem;
 }
 
@@ -268,8 +282,6 @@ section img {
   background-color: black;
 }
 
-
-
 /* ___ FOOTER ___ */
 footer {
   background-color: black;
@@ -279,7 +291,7 @@ footer {
 }
 
 footer h4 {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   font-variant: small-caps;
 }
 
@@ -289,7 +301,7 @@ footer h4 span {
 }
 
 footer h5 {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 300;
 }
 
