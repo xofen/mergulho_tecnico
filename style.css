@@ -29,7 +29,7 @@
     /* DESKTOP */
     #viagens {
         flex-direction: row-reverse;
-        gap: 10%;
+        gap: 5%;
         justify-content: center;
     }
 
@@ -50,28 +50,7 @@
     align-items: center;
 }
 
-/* .trip-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.trip-card h3 {
-    font-size: 1.1rem;
-    margin-top: 1rem;
-}
-
-.trip-card p {
-    font-style: italic;
-}
-
-.trip-card img {
-    padding: .4rem;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.128);
-    width: 200px;
-    height: 200px;
-} */
 
 /* ___ CONHECA ___ */
 #conheca img {
