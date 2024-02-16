@@ -36,22 +36,21 @@
     #viagens .section-box {
         width: 400px;
     }
+}
 
-    #trips {
-        width: 400px;
-    }
+@media screen and (max-width: 768px) {
+    /* MOBILE */
+    
 }
 
 #trips {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 30px;
-    padding: 2rem 0;
 }
 
-.trip-card {
+/* .trip-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +71,7 @@
     background-color: rgba(255, 255, 255, 0.128);
     width: 200px;
     height: 200px;
-}
+} */
 
 /* ___ CONHECA ___ */
 #conheca img {
